@@ -3,7 +3,8 @@
 Simple, cookie-based authentication server written in Go with Docker and Sqlite.
 
 ```bash
-docker ...
+docker build -t go-auth github.com/jhsul/go-auth
+docker run -it -p 3000:3000 go-auth
 ```
 
 **Sign Up**
