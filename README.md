@@ -9,7 +9,7 @@ docker ...
 **Sign Up**
 
 ```bash
-$ curl --location --request POST 'http://localhost:3000/signup' \
+curl --location --request POST 'http://localhost:3000/signup' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "username": "jack",
@@ -22,7 +22,7 @@ $ curl --location --request POST 'http://localhost:3000/signup' \
 **Log In**
 
 ```bash
-$ curl --location --request POST 'http://localhost:3000/login' \
+curl --location --request POST 'http://localhost:3000/login' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "username": "jack",
@@ -35,7 +35,7 @@ $ curl --location --request POST 'http://localhost:3000/login' \
 **Get Authentication Status**
 
 ```bash
-$ curl --location --request GET 'localhost:3000/me' \
+curl --location --request GET 'localhost:3000/me' \
 --header 'Cookie: session_id=****'
 
 # jack
@@ -44,7 +44,7 @@ $ curl --location --request GET 'localhost:3000/me' \
 **Log Out**
 
 ```bash
-$ curl --location --request DELETE 'localhost:3000/me'
+curl --location --request DELETE 'localhost:3000/me'
 
 # Goodbye, jack
 ```
